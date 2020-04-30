@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100&display=swap&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital@1&display=swap');
+@keyframes slideFromTop{
+	 0% {
+    transform: translateY(-250px);
+    animation-timing-function: ease-in;
+    opacity: 1;
+  	}
+  	100% {
+    transform: translateY(0px);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  	}
+}
+@keyframes openHide{
+	0%{
+		opacity:0;
+		animation-timing-function: ease-in;
+	}
+	100%{
+		opacity: 1;
+		animation-timing-function: ease-out;
+	}
+}
+
+*{
+	margin:0;
+	padding: 0;
+}
+body {
+	margin-top:10px; 
+	height: 100%;
+	width: 100%;
+	background-image: url(images/bg.jpg);
+	background-size: cover;
+}
+a{
+
+	text-decoration: none;	
+	color:white;
+	
+}
+#change_lang{
+	position: relative;
+	top:20px;
+	left: 20px;
+	width:100px;
+	text-align: center;
+	background-color: #534ED9;
+	border-radius: 40px;
+	font-family: 'Exo 2', sans-serif;
+	font-weight: 400;
+	z-index: 3;
+}
+#logoimg{
+	width: 100px;
+	height: 100px;
+}
+.logo{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	animation: slideFromTop 1s 1 both;
+}
+.PreVisitor{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.MainText {
+	width:700px;
+	text-align: center;
+	color:white;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 700;
+	font-size: 32px;
+	word-wrap: normal;
+	animation: slideFromTop 1s 1 both;
+}
+.PlacesToTravel{
+	animation: openHide 1s 1 both;
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	align-items: center;
+	flex-wrap: wrap;
+	height: 200px;
+
+	
+}
+.Country{
+	text-align: center;
+	margin: 25px 65px 25px 65px;
+	background-color: #6A439A;
+	border-radius: 40px;
+	font-family: 'Exo 2', sans-serif;
+	font-weight: 400;
+	font-size: 40px;
+	width: 300px;
+
+}
+
+.Country:hover{
+	transform: scale(1.3);
+	transition-duration: 0.8s;
+}
+#searchBar{
+	text-align: left;
+	padding-left:50px;
+	margin-left:65px;
+	margin-top: 50px;
+	background-color: white;
+	border-radius: 40px 0px 0px 40px ;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 700;
+	font-size: 25px;
+	width: 450px;
+	border:none;
+
+}
+#searchButton{
+	text-align: center;
+	margin-right: 65px;
+	margin-top: 50px;
+	background-color: #FFD140;
+	border-radius: 0px 40px 40px 0px;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 700;
+	font-size: 40px;
+	width: 150px;
+	border: 0.5px solid black;
+
+}
+#change_lang:hover{
+	transform: scale(1.3);
+	transition-duration: 0.8s;
+}
+.searchContainer{
+	width: 100%;
+	display:flex;
+	justify-content: center;
+}

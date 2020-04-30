@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="Egypt.css">
+	<title>Египет</title>
+	<script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
+	<script src ="Egypt.js" defer></script>
+</head>
+
+<body>
+	<header>
+		<div class = "headerContainer"> 
+		
+		<img id = "logoimg" src="Images/Logo 1.png" alt="AirPlane">
+		
+		<h1>Египет</h1>
+		
+		<nav>
+			<ul>
+				<li><a href="Visit.html">Главная</a></li>
+				<li><a href="#WTH">Погода</a></li>
+				<li><a href="#ENT">Развлечения</a></li>
+				<li><a href="#BH">Лучший отель</a></li>
+			</ul>
+		</nav>
+	</div>
+	</header>
+
+
+	<article>
+
+		<hr noshade  class ="underLine">
+		
+		<h2 class="titles"><a id="BH">О стране</a></h2>
+	
+		<hr noshade  class ="underLine2">
+
+		<div id="headContainer">
+			<img id = "Flag" src="Images/Egypt/Flag_of_Egypt.svg" alt="EgyptFlag">
+			<div class="titleText">
+				Египет – страна в Северо-Восточной Африке и на Ближнем Востоке. О ее богатой истории, насчитывающей более пяти тысяч лет, напоминают археологические памятники в плодородной долине реки Нил, среди которых пирамиды Гизы, Большой сфинкс, а также Карнакский храм, стены которого испещрены иероглифами, и Долина царей с гробницами фараонов в районе Луксора. Столица страны Каир славится мечетью Мухаммеда Али, построенной во времена Османской империи, и Египетским музеем, где выставлены мумии фараонов и позолоченные деревянные статуи Ра.
+			</div>
+		</div>
+
+		
+		<hr noshade  class ="underLine">
+		
+		<h2 class="titles" id="WTH">Погода</h2>
+
+		<hr noshade  class ="underLine2">
+		
+		<div class = "weatherContainer">
+
+			<div class ="aboutCountryWheather"><p>Погода  в Египте зависит от времени года когда вы хотите посетить эту страну. В начале лета преобладает температура в районе 30 градусов и является самой комфортной там. В конце лета, в августе, температура уже иногда переходит за отметку в 40 градусов и подходит только для любителей жары. К зиме начинается сезон ветров, когда дует сильный ветер и температу днем в стреднем около 20 градусов, поэтому здесь уже не жарко, но и не совсем тепло, особенно по вечерам.</p></div>
+
+
+			
+
+			<div class = "weatherValueForecast">
+				<h3>Текущая Погода</h3>
+				<p>Температура: <span id="currentTemp"></span> C</p>
+				<p>Ветер: <span id="currentWind"></span>	m/s</p>
+				<p>Влажность: <span id="currentHumidity"></span> %</p>
+			</div>
+
+			<div id = "weatherImageDisplay">
+				 <!-- <img id = "weatherPhoto" src="Images/WeatherForecastImages/sun.png" alt="weatherForecastImg"> -->
+				 <!-- <img id = "weatherPhoto" src='' alt="weatherForecastImg"> -->
+			</div>
+	
+		</div>
+		
+		<hr noshade  class ="underLine">
+		
+		<h2 class="titles" id="ENT">Развлечения</h2>
+
+		<hr noshade  class ="underLine2">
+		
+		<div class="slider">
+			<input checked type ="radio" name ="respond" id="desktop" >
+			<article class ="sliderNav">
+				<input type ="radio" name ="slider" id="switch1" >
+				<input type ="radio" name ="slider" id="switch2" >
+				<input type ="radio" name ="slider" id="switch3" >
+				<input type ="radio" name ="slider" id="switch4" >
+				<input type ="radio" name ="slider" id="switch5" >
+
+				<div class="slides">
+					<div id ="overflow">
+						<div class ="sliderImage">
+							<article><img src="Images/Slider/Excursion.png" alt=""></article>
+							<article><img src="Images/Slider/Safari.png" alt=""></article>
+							<article><img src="Images/Slider/Diving.png" alt=""></article>
+							<article><img src="Images/Slider/Batiscaf.png" alt=""></article>
+							<article><img src="Images/Slider/Snorkeling.png" alt=""></article>
+							
+						</div>
+					</div>
+				</div>
+				<div id="controls">
+					<label for ="switch1"></label>
+					<label for ="switch2"></label>
+					<label for ="switch3"></label>
+					<label for ="switch4"></label>
+					<label for ="switch5"></label>
+				</div>
+
+				<div id="controlsActive">
+					<label for ="switch1"></label>
+					<label for ="switch2"></label>
+					<label for ="switch3"></label>
+					<label for ="switch4"></label>
+					<label for ="switch5"></label>
+				</div>
+			</article>
+		</div>	
+		
+		<hr noshade  class ="underLine">
+		
+		<h2 class="titles"><a id="BH">Лучший отель</a></h2>
+
+		<hr noshade  class ="underLine2">
+
+	<div class ="bestHotelContainer">
+			<div id="bestHotelName"><h3>| Beach Oasis Reef Resort 5* |</h3></div>
+
+			<div id="bestHotelImg"><img src="Images/4%20layout%20(3).jpg" alt=""></div>
+			
+		<div class="photoHotel">
+			<img src="Images/Egypt/Reef.jpg" alt="Photo of Hotel">
+			<img src="Images/4%20layout%20(2).jpg" alt="Photo of Hotel">
+			<img src="Images/4%20layout%20(1).jpg" alt="Photo of Hotel">
+			<img src="Images/4%20layout%20(4).jpg" alt="Photo of Hotel">
+		</div>
+		
+			<div class = "aboutHotel">
+				<hr noshade  class ="underLine">
+				<h3>Основные достоинства отеля</h3>
+				<hr noshade  class ="underLine2">			
+				<table>
+					<tr>
+						<td id ="firstInLeftColumn" >Лучший пляж</td>
+						<td id = "firstInRightColumn" >Golden Beach - пляж данного отеля. Он славится кристально чистой водой, белым песком и самыми красивыми рифами</td>
+					</tr>
+					<tr>
+						<td class ="leftColumn" >Лучший сервис</td>
+						<td class = "rightColumn" >В отеле стараются сделать отдых каждго гостя незабываемым, поэтому сервис на высоте</td>
+					</tr>
+					<tr>
+						<td class ="leftColumn" >Номера</td>
+						<td class = "rightColumn" >В отеле есть несколько вариантов номеров к примеру с видом на бассейн или на море, но не зависимо от этого все номера очень уютны для отдыха в них</td>
+					</tr>
+					<tr>
+						<td class ="leftColumn" >Територия</td>
+						<td class = "rightColumn" >Територия как для египетского отеля средняя, ухожена. На ней расположено несколько корпусов, пляж, дайвинг центр, 7 бассейнов (один с водными горками)</td>
+					</tr>
+					<tr>
+						<td class ="leftColumn" >Еда в отеле</td>
+						<td class = "rightColumn" >Хоть и пуевки продаются по системе AI, но сам отель создал для своих гостей UAI. Влюбое время дня и ночи вы смоете перекусить то, что пожелаете начиная от сладкого заканчивая пиццей.</td>
+					</tr>
+					<tr>
+						<td id ="lastInLeftColumn" >Проживающие в отеле</td>
+						<td id = "lastInRightColumn" >Никто не застрахован от  не очень дружелюбных туристов, но этот отель принадлежит итальянцам, поэтому именно в этот отель прилетает Западная Европа, соответственно криков "Тагил" вы не услышите.</td>
+					</tr>
+
+				</table>		
+			</div>
+
+			<div class = "aboutHotel2">
+				<div class = "infoBlock">
+					<div class = "nameOfFeture">Лучший пляж</div>
+					
+					<div class = "feturebody">В отеле есть несколько вариантов номеров к примеру с видом
+					на бассейн или на море, но не зависимо от этого все номера очень уютны для отдыха в них</div>
+
+				</div>
+				<div class = "infoBlock"></div>
+				<div class = "infoBlock"></div>
+
+				<div class = "infoBlock"></div>
+				<div class = "infoBlock"></div>
+				<div class = "infoBlock"></div>
+				
+			</div>
+	</div>
+		
+
+	</article>	
+</body>
+</html>

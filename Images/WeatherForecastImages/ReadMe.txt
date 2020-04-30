@@ -1,0 +1,1 @@
+Vector images size 512 px;

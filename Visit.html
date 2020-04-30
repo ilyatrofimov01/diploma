@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Исследуй новое</title>
+	<script src ="Visit.js" defer></script>
+	<link rel="stylesheet" href="Visit.css">
+	<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-firestore.js"></script>
+
+</head>
+<body>
+	<a href="Visit_en.html"><div id="change_lang">English Version</div></a>
+	<div calss = "PreVisitor">
+
+		<div class = "logo">
+			<img id = "logoimg" src="Images/Logo 1.png" alt="AirPlane">
+		
+			<div class = "MainText">
+				<h1> Где бы вы хотели провести свой отдых? </h1>
+			</div>
+		</div>
+
+		<form class = "searchContainer">
+			<input id = "searchBar" class ="search" type="search"  placeholder ="Find country: ex.Egypt">
+			<input id = "searchButton" type="submit" value ="Find">
+		</form>
+
+		<div class ="PlacesToTravel">
+			<a href="Egypt.html"><div class ="Country">Египет</div></a>
+			<a href="Turkish.html"><div class ="Country">Турция</div></a>
+			<a href="Thailand.html"><div class ="Country">Тайланд</div></a>
+		
+		
+			<a href="Sri-lanka.html"><div class ="Country">Шри-Ланка</div></a>
+			<a href="Bali.html"><div class ="Country">Бали</div></a>
+			<a href="Cyprus.html"><div class ="Country">Кипр</div></a>
+		</div>
+					
+	</div>
+</body>
+</html>
