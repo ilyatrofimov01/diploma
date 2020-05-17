@@ -11,7 +11,7 @@ axios.post(url)
 		//var sunset = new Date(response.data.sys.sunset);
 		
 		 var today = new Date(); 
-	 	 today = today.getHours();
+		  today = today.getHours();
 		// console.log(sunset);
 		// console.log(today);	
 		// var sunrise = new Date(response.data.sys.sunrise);	
@@ -29,10 +29,10 @@ axios.post(url)
 			break;
 			case "Clouds": 
 			if (today > 18 && today < 6){
-				document.getElementById("weatherImageDisplay").innerHTML = `<img id = "weatherPhoto" src="Images/WeatherForecastImages/cloudy (1).png" alt="weatherForecastImg">`;
+				document.getElementById("weatherImageDisplay").innerHTML = `<img id = "weatherPhoto" src="Images/WeatherForecastImages/cloudy.png" alt="weatherForecastImg">`;
 				console.log('day')
 			}else{
-				document.getElementById("weatherImageDisplay").innerHTML = `<img id = "weatherPhoto" src="Images/WeatherForecastImages/cloudy.png" alt="weatherForecastImg">`;
+				document.getElementById("weatherImageDisplay").innerHTML = `<img id = "weatherPhoto" src="Images/WeatherForecastImages/cloudy (1).png" alt="weatherForecastImg">`;
 				console.log('night')
 			}
 			
