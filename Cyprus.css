@@ -332,67 +332,46 @@ label, a{
 	width:49%;
 	height: 200px;
 }
-
-.aboutHotel table {
-	border-spacing: 0;
-	margin: 20px 40px 20px 40px;
-}
-.leftColumn{
- 	width: 15%;
- 	background-color: #FFD140;
- 	border-bottom:1px solid black;
- 	text-align: center;
- 	padding-top: 7px;
- 	padding-bottom: 7px;
-}
-#firstInLeftColumn{
-	border-bottom: 1px solid black;
-
- 	text-align: center;
- 	padding-top: 7px;
- 	padding-bottom: 7px;	
-	width: 15%;
- 	background-color: #FFD140;
-	border-radius: 15px 0 0 0;
-}
-.rightColumn{
-	width: 45%;
-	background-color: #E0F2F7;
-	text-align: center;
-	border-bottom:1px solid black;
-	padding-top: 5px;
- 	padding-bottom: 5px;
-}
-#firstInRightColumn{
-	width: 45%;
-	background-color: #E0F2F7;
-	border-radius: 0 15px 0 0;
-	border-bottom:1px solid black;
-	text-align: center;
-	padding-top: 5px;
- 	padding-bottom: 5px;
-
-}
-#lastInRightColumn{
-	width: 45%;
-	background-color: #E0F2F7;
-	border-radius: 0 0 15px 0;
-	/*border-bottom:1px solid black;*/
-	text-align: center;
-	padding-top: 5px;
- 	padding-bottom: 5px;
-
-}
-#lastInLeftColumn{
-	/*border-bottom: 1px solid black;*/
- 	text-align: center;
- 	padding-top: 7px;
- 	padding-bottom: 7px;	
-	width: 15%;
- 	background-color: #FFD140;
-	border-radius: 0 0 0 15px;
-}
 table{
 	font-family: 'Exo 2', sans-serif;
 	font-weight: 400;
+}
+.aboutHotel2{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-top: 25px;
+
+}
+.infoBlock{
+	width: 28%;
+	height: auto;
+	margin-bottom: 50px;
+	border:1px solid black;
+	border-radius: 20px;
+	padding-bottom: 1%;
+	box-shadow: 0 0 10px;
+}
+.nameOfFeture{
+	color: black;
+	background-color: #FFD140;
+	height: 20%;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 600;
+	font-size:24px;
+	border-radius: 20px  20px 0px 0px;
+	text-align: center;
+	padding-top: 10px;
+}
+.feturebody{
+	height: auto;
+	text-align: center;
+	color: black;
+	font-family: 'Exo 2', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	padding:15px 5px 15px 5px;
+
 }

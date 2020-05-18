@@ -4,7 +4,7 @@ var night;
 let imgWeather;
 fetch("http://localhost:8090/").then((data) => data.json()).then((res) =>{
 	let tmp;	
-	tmp = res.find((el) => el.id === 'Egypt');
+	tmp = res.find((el) => el.id === 'Turkish');
 	day = tmp.sunrise;
  	night = tmp.sunset;
 });

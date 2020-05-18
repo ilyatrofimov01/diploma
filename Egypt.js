@@ -25,7 +25,7 @@ function gg () {
 				
 			break;
 			case "Clouds": 
-			if (today > night && today < day){
+			if (today < night && today > day){
 				document.getElementById("weatherImageDisplay").innerHTML = `<img id = "weatherPhoto" src="Images/WeatherForecastImages/cloudy.png" alt="weatherForecastImg">`;
 				console.log('day')
 			}else{
